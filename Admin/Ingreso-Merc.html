@@ -7,7 +7,7 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #17a24f; /* Color de fondo actualizado */
+    background-color: #17a24f;
     color: white;
     display: flex;
     align-items: center;
@@ -16,29 +16,45 @@
     margin: 0;
   }
   .container {
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    box-sizing: border-box;
     text-align: center;
   }
   h1 {
     margin-bottom: 20px;
+    font-size: 28px;
   }
-  .button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    display: block; /* Para que cada botón ocupe su propia línea */
-    margin: 10px auto; /* Centrado horizontal */
-  }
-  .field {
-    margin: 10px 0;
+  label {
+    float: left;
+    font-size: 18px;
+    clear: both;
   }
   input[type="text"], input[type="date"], select {
+    width: calc(100% - 20px);
     padding: 10px;
-    margin-top: 5px;
-    width: 200px; /* Ajustar según necesidad */
-    color: black; /* Para el texto dentro de los inputs */
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    box-sizing: border-box;
+    color: #000;
+  }
+  .button {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
   }
   .button:hover {
     background-color: #333;
@@ -47,31 +63,31 @@
 </head>
 <body>
 <div class="container">
-  <h1>Restaurant</h1>
+  <h1>Ingreso de Stock Alimentario</h1>
   <form action="#" method="post">
     <div class="field">
-      <label for="product-id">Ingresar mercadería:</label><br>
-      <input type="text" id="product-id" name="product-id" placeholder="ID del producto">
+      <label for="product-id">ID del producto:</label>
+      <input type="text" id="product-id" name="product-id" placeholder="ID del producto" required>
     </div>
     <div class="field">
-      <label for="expiration-date">Fecha de vencimiento:</label><br>
-      <input type="date" id="expiration-date" name="expiration-date">
+      <label for="expiration-date">Fecha de vencimiento:</label>
+      <input type="date" id="expiration-date" name="expiration-date" required>
     </div>
     <div class="field">
-      <label for="food-type">Tipo de alimento:</label><br>
-      <select id="food-type" name="food-type">
-        <option value="pollo">Pollo</option>
-        <option value="carne">Carne</option>
-        <option value="congelados">Congelados Varios</option>
-        <option value="perecibles">Alimento Perecible</option>
-        <option value="pan">Pan</option>
-        <option value="liquidos">Líquidos</option>
+      <label for="food-type">Tipo de alimento:</label>
+      <select id="food-type" name="food-type" required>
+        <option value="Mendocino">Mendocino</option>
+        <option value="Pepsi">Pepsi</option>
+        <option value="Completo Italiano">Completo Italiano</option>
+        <option value="Muffin Chocolate">Muffin Chocolate</option>
+        <option value="Pan">Pan</option>
+        <option value="Papas Fritas">Papas Fritas</option>
       </select>
     </div>
     <button type="submit" class="button">Ingresar Producto</button>
   </form>
   <!-- Botón para volver al Home -->
-  <button onclick="window.location.href='index.html';" class="button">Volver al Home</button>
+  <button onclick="window.location.href='Pant_Admin.html';" class="button">Volver al Home</button>
 </div>
 </body>
 </html>
