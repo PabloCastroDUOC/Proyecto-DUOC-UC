@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Inventory</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #17a24f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .field {
+    margin: 10px 0;
+  }
+  input[type="text"], input[type="date"] {
+    padding: 10px;
+    margin-top: 5px;
+  }
+  .button:hover {
+    background-color: #333;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Restaurant</h1>
+  <form action="#" method="post">
+    <div class="field">
+      <label for="product-id">Ingresar mercadería:</label><br>
+      <input type="text" id="product-id" name="product-id" placeholder="ID del producto">
+    </div>
+    <div class="field">
+      <label for="expiration-date">Fecha de vencimiento:</label><br>
+      <input type="date" id="expiration-date" name="expiration-date">
+    </div>
+    <button type="submit" class="button">Ingresar Producto</button>
+  </form>
+</div>
+</body>
+</html>
