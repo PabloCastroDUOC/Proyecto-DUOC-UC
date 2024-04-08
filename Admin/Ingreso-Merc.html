@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Restaurant Inventory</title>
+<title>Inventario de Restaurante</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #17a24f;
+    background-color: #17a24f; /* Color de fondo actualizado */
     color: white;
     display: flex;
     align-items: center;
@@ -28,13 +28,17 @@
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
+    display: block; /* Para que cada botón ocupe su propia línea */
+    margin: 10px auto; /* Centrado horizontal */
   }
   .field {
     margin: 10px 0;
   }
-  input[type="text"], input[type="date"] {
+  input[type="text"], input[type="date"], select {
     padding: 10px;
     margin-top: 5px;
+    width: 200px; /* Ajustar según necesidad */
+    color: black; /* Para el texto dentro de los inputs */
   }
   .button:hover {
     background-color: #333;
@@ -53,8 +57,21 @@
       <label for="expiration-date">Fecha de vencimiento:</label><br>
       <input type="date" id="expiration-date" name="expiration-date">
     </div>
+    <div class="field">
+      <label for="food-type">Tipo de alimento:</label><br>
+      <select id="food-type" name="food-type">
+        <option value="pollo">Pollo</option>
+        <option value="carne">Carne</option>
+        <option value="congelados">Congelados Varios</option>
+        <option value="perecibles">Alimento Perecible</option>
+        <option value="pan">Pan</option>
+        <option value="liquidos">Líquidos</option>
+      </select>
+    </div>
     <button type="submit" class="button">Ingresar Producto</button>
   </form>
+  <!-- Botón para volver al Home -->
+  <button onclick="window.location.href='index.html';" class="button">Volver al Home</button>
 </div>
 </body>
 </html>
