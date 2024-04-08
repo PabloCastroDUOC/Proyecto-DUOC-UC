@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida de Mercadería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #17a24f;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        .field {
+            margin: 10px 0;
+        }
+        label, input, select, .button {
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+        input, select {
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .button {
+            padding: 10px;
+            background-color: #4d4040;
+            border: none;
+            color: white;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #333333;
+        }
+        .home-button {
+            background-color: #306030; /* Diferenciar del botón principal */
+        }
+        .home-button:hover {
+            background-color: #1f401f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Salida de Mercadería</h1>
+        <form action="#" method="post">
+            <div class="field">
+                <label for="product-id">ID del Producto:</label>
+                <input type="text" id="product-id" name="product-id">
+            </div>
+            <div class="field">
+                <label for="product-name">Nombre del Producto:</label>
+                <input type="text" id="product-name" name="product-name">
+            </div>
+            <div class="field">
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <div class="field">
+                <label for="exit-date">Fecha de Salida:</label>
+                <input type="date" id="exit-date" name="exit-date">
+            </div>
+            <div class="field">
+                <label for="exit-reason">Motivo de la Salida:</label>
+                <select id="exit-reason" name="exit-reason">
+                    <option value="venta">Venta</option>
+                    <option value="donacion">Donación</option>
+                    <option value="desperdicio">Desperdicio</option>
+                    <!-- Añade más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="field">
+                <label for="responsible">Responsable:</label>
+                <input type="text" id="responsible" name="responsible">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="button">Registrar Salida</button>
+            </div>
+        </form>
+        <!-- Botón para volver al Home -->
+        <button onclick="window.location.href='Pant_Admin.html';" class="button home-button">Volver al Home</button>
+    </div>
+</body>
+</html>
