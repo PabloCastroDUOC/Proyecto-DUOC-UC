@@ -33,8 +33,10 @@
     float: left;
     font-size: 18px;
     clear: both;
+    display: block;
+    margin-top: 10px;
   }
-  input[type="text"], input[type="date"], select {
+  input[type="text"], input[type="date"], input[type="number"], select {
     width: calc(100% - 20px);
     padding: 10px;
     margin-top: 8px;
@@ -53,20 +55,14 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    display: block; /* Para que cada botón ocupe su propia línea */
-    margin: 10px auto; /* Centrado horizontal */
-  }
-  .field {
-    margin: 10px 0;
-  }
-  input[type="text"], input[type="date"], select {
-    padding: 10px;
-    margin-top: 5px;
-    width: 200px; /* Ajustar según necesidad */
-    color: black; /* Para el texto dentro de los inputs */
+    display: block; 
+    margin: 10px auto; 
   }
   .button:hover {
     background-color: #333;
+  }
+  .field {
+    margin: 10px 0;
   }
 </style>
 </head>
@@ -79,18 +75,22 @@
       <input type="text" id="product-id" name="product-id" placeholder="ID del producto" required>
     </div>
     <div class="field">
+      <label for="product-quantity">Cantidad del producto:</label>
+      <input type="number" id="product-quantity" name="product-quantity" min="1" placeholder="Cantidad" required>
+    </div>
+    <div class="field">
       <label for="expiration-date">Fecha de vencimiento:</label>
       <input type="date" id="expiration-date" name="expiration-date" required>
     </div>
     <div class="field">
-      <label for="food-type">Tipo de alimento:</label><br>
-      <select id="food-type" name="food-type">
-        <option value="pollo">Pollo</option>
-        <option value="carne">Carne</option>
-        <option value="congelados">Congelados Varios</option>
-        <option value="perecibles">Alimento Perecible</option>
-        <option value="pan">Pan</option>
-        <option value="liquidos">Líquidos</option>
+      <label for="food-type">Tipo de alimento:</label>
+      <select id="food-type" name="food-type" required>
+        <option value="Masas">Mendocino</option>
+        <option value="Líquidos">Pepsi</option>
+        <option value="Completo">Completo</option>
+        <option value="Masas">Muffin</option>
+        <option value="Masas">Pan</option>
+        <option value="Líquidos">Jugos</option>
       </select>
     </div>
     <button type="submit" class="button">Ingresar Producto</button>
