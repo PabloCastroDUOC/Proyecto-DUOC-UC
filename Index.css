@@ -6,7 +6,6 @@ body {
   }
   .postre {
     display: flex;
-    align-items: left;
     justify-content: space-evenly;
     padding: 20px;
     margin: 10px;
@@ -16,8 +15,10 @@ body {
     color:aliceblue;
     min-width: 100px; 
     min-height: 100px; 
-    max-width: 500px;
+    max-width: 400px;
     max-height: 230px;
+    box-sizing: border-box;
+    float: left;
 
   }
   
@@ -39,7 +40,7 @@ body {
   
   .descripcion {
     margin: 20px;
-    text-align: right;
+    text-align: center;
     padding: 5px;
   }
   
