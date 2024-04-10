@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Carrito.css">
+  <title>Lista de Compras</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Compras</h1>
+    <ul>
+      <li class="item">
+        <img src="Imag Index/Mendocino.jpg">
+        <span>Mendocino</span>
+        <button>Eliminar</button>
+      </li>
+      <li class="item">
+        <img src="Imag Index/Pepsi.jpg">
+        <span>Pepsi</span>
+        <button>Eliminar</button>
+      </li>
+    </ul>
+  </div>
+  <div class="Total">
+    <h2>Total: $2.600</h2>
+    <form id="payment-form">
+      <label>
+        <input type="radio" name="payment-method" value="cash">
+        Pago en efectivo
+      </label>
+      <label>
+        <input type="radio" name="payment-method" value="card">
+        Pago con tarjeta
+      </label>
+      <br><br>
+      <button type="submit">Finalizar Compra</button>
+    </form>
+  </div>
+
+</body>
+</html>
