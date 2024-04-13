@@ -97,3 +97,32 @@ body {
     text-shadow: 2px 2px 2px black,-2px -2px 2px green;
     
   }
+
+  .Carrito img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    max-height: 150px;
+  }
+
+  .Carrito a {
+    display: inline-block;
+    padding: 1px 1px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+  }
+
+  .Carrito a:hover {
+    background-color: #e0e0e0;
+  }
+
+  .Carrito {
+    text-align: center;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
