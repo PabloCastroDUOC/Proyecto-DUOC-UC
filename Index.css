@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-color: #17a24f;
+    border-top: black;
   }
   .postre {
     display: flex;
@@ -68,3 +69,31 @@ body {
     cursor: pointer;
   }
 
+  .Postre1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(79, 78, 78);
+    color:aliceblue;
+    min-width: 100px; 
+    min-height: 100px; 
+    max-width: 400px;
+    max-height: 230px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .Titulo{
+    margin: 20px;
+    text-align: center;
+    padding: 5px;
+    color:#ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black,-2px -2px 2px green;
+    
+  }
