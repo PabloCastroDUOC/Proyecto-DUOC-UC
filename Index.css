@@ -95,5 +95,10 @@ body {
     font-weight: bold;
     font-style: italic;
     text-shadow: 2px 2px 2px black,-2px -2px 2px green;
+  }
     
+  .img-reducida {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
   }
