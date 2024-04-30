@@ -128,9 +128,14 @@ body {
   }
 
   .Carrito {
-    text-align: center;
     font-family: sans-serif;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
+}
+
+.texto{
+  text-shadow: 2px 2px 3px  black, -2px -2px 2px white;
+  text-align: center;
+  font-family: sans-serif;
 }
