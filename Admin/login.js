@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const loginForm = document.querySelector('form');
     const usernameInput = document.getElementById('username');
     const passwordInput = document.getElementById('password');
@@ -21,19 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
         let isValid = true;
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
-
+    
         // Validación de nombre de usuario
         if (!username || username.length < 4) {
             alert('El nombre de usuario debe tener al menos 4 caracteres.');
             isValid = false;
         }
-
+    
         // Validación de contraseña
         if (!password || password.length < 6) {
             alert('La contraseña debe tener al menos 6 caracteres.');
             isValid = false;
         }
-
+    
+        // Verificar si las credenciales coinciden con las almacenadas en localStorage
+        if (username !== localStorage.getItem('username') || password !== localStorage.getItem('password')) {
+            alert('Nombre de usuario o contraseña incorrectos.');
+            isValid = false;
+        }
+    
         return isValid;
     }
+    
 });
