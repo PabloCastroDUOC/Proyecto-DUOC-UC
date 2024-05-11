@@ -94,7 +94,7 @@ $(document).on('click', '.disminuir-cantidad', function() {
     });
 
     // Manejar el evento clic para el botón "Pagar"
-$(document).on('click', '#pagado', function() {
+$(document).on('click', '#btn-pagar', function() {
     window.location.href = 'index.html';  // Cambia aquí a la página que deseas que redirija
 });
 
